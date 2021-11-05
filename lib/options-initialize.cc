@@ -38,7 +38,7 @@ RuntimeOptions::RuntimeOptions() :
   gpio_slowdown(GPIO::IsPi4() ? 2 : 1),
 #endif
   daemon(0),            // Don't become a daemon by default.
-  drop_privileges(1),   // Encourage good practice: drop privileges by default.
+  drop_privileges(0),   // Must run as root
   do_gpio_init(true)
 {
   // Nothing to see here.
